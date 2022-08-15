@@ -184,38 +184,17 @@ textarea{
     border-color: black;
     border-width: 2px;
     border-style: solid ;
-
-}
-
-.boton1 {
     transition-duration: 0.4s;
+    cursor: pointer;
+
 }
-  
+ 
 .boton1:hover{
     background-color: #32babe; 
     color: white;
     font-size: 20px;
 }
 
-.boton2 {
-    transition-duration: 0.4s;
-}
-  
-.boton2:hover {
-    background-color: #32babe;
-    color: white;
-    font-size: 20px;
-}
-
-.botonCopiar {
-    transition-duration: 0.4s;
-}
-  
-.botonCopiar:hover {
-    background-color: #32babe;
-    color: white;
-    font-size: 20px;
-}
 
 .boton2{
 
@@ -237,9 +216,16 @@ textarea{
     border-color: black;
     border-width: 2px;
     border-style: solid ;
+    transition-duration: 0.4s;
+    cursor: pointer;
 
 }
-
+  
+.boton2:hover {
+    background-color: #32babe;
+    color: white;
+    font-size: 20px;
+}
 
 .botonCopiar{
  
@@ -261,9 +247,16 @@ textarea{
     border-color: black;
     border-width: 2px;
     border-style: solid ;
-    
+    transition-duration: 0.4s;
+    cursor: pointer;
+
 }
 
+.botonCopiar:hover {
+    background-color: #32babe;
+    color: white;
+    font-size: 20px;
+}
 
 footer{
     position: relative;
