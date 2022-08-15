@@ -1,0 +1,278 @@
+body{
+    background: #c099fd;
+    height: 650px;
+    position: fixed;
+}
+
+h1{
+    text-align: center;
+}
+
+.logo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 100px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+
+}
+
+.advertencia{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 493px;
+
+}
+
+.texto{
+
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;  
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.resultado{
+    background: white;
+    position: absolute;
+    width: 320px;
+    height: 544px;
+    left: 974px;
+    top: 40px;
+    border-radius: 32px;
+    
+}
+
+.imagen{
+    height: 280px;
+}
+
+.mensajeRemplazar{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 336px;
+    height: 104px;
+    top: 319px;
+    font-family: cursive;
+
+}
+
+.mensaje{
+
+    width: 225px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-left: 50px;
+
+}
+
+
+.mensaje2{
+
+    width: 225px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-left: 50px;
+
+}
+
+.ingresoTexto{
+
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+
+}
+
+textarea{
+
+    border-style: none;
+    background: #c099fd;
+    resize: none;
+    font-size: 19px;
+    width: 120%;
+    height: 700%;
+    font-family: 'Source Serif Pro', serif;
+    
+}
+
+.contenedorBotones{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 39px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 514px;
+    
+}
+
+.boton1{
+
+    font-family: 'Source Serif Pro', serif;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    line-height: 5%;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid ;
+
+}
+
+.boton1 {
+    transition-duration: 0.4s;
+}
+  
+.boton1:hover{
+    background-color: #32babe; 
+    color: white;
+    font-size: 20px;
+}
+
+.boton2 {
+    transition-duration: 0.4s;
+}
+  
+.boton2:hover {
+    background-color: #32babe;
+    color: white;
+    font-size: 20px;
+}
+
+.botonCopiar {
+    transition-duration: 0.4s;
+}
+  
+.botonCopiar:hover {
+    background-color: #32babe;
+    color: white;
+    font-size: 20px;
+}
+
+.boton2{
+
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    line-height: 5%;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid ;
+
+}
+
+
+.botonCopiar{
+ 
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    line-height: 5%;
+    width: 320px;
+    height: 70px;
+    background: #D8DFE8;
+    border: 2px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid ;
+    
+}
+
+
+footer{
+    position: relative;
+    background: #343A40;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 335%;
+    top: 94%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}

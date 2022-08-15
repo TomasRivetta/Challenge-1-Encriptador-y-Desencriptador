@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="shortcut icon" href="image/icono.png">
+        <title>Challenge-1-Alura-ONE</title>
+    </head>
+
+    <body>
+        <header>
+
+            <div class="logo">
+        
+                <img src="image/Logo.png">
+        
+            </div>
+            
+        </header>
+
+        <main>
+
+            <div class="advertencia">
+
+                <p class="texto"> &#9888 Solo letras minusculas y sin acentos se encriptan y desencriptan</p>
+ 
+            </div>
+
+            <div class="resultado">
+
+                <img class="imagen"src="image/Muñeco.png">
+     
+                <div id="resultado" class="mensajeRemplazar"> 
+        
+                    <p class="mensaje">Ningun Mensaje fue encontrado</p>
+                    <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                
+                </div>
+                
+            </div>
+    
+            <div class="ingresoTexto">
+    
+                <textarea id="textoInput" class="texto-ingresado" placeholder="Ingrese el texto" name="textarea" rows="20" cols="93"></textarea>
+                
+            </div>
+    
+            <div class="contenedorBotones">
+
+                <button class="boton1" onclick="encriptar()">&#128274;Encriptar</button>
+                <button class="boton2" onclick="desencriptar()">&#128275;Desencriptar</button>
+                <button class="botonCopiar" onclick="copiar()">&#128203;Copiar</button>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <p>Hecho por <a href="https://github.com/TomasRivetta" target="_blanck">Tomas Rivetta</a>. Challenge-1-Alura-ONE</p>
+
+        </footer>
+
+        <script src="coding/coding.js"></script>
+
+    </body>
+</html>
