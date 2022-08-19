@@ -1,12 +1,13 @@
 body{
     background: #c099fd;
-    height: 650px;
-    position: fixed;
+    width: auto;
+    height: auto;
 }
 
 h1{
     text-align: center;
 }
+
 
 .logo{
 
@@ -184,17 +185,28 @@ textarea{
     border-color: black;
     border-width: 2px;
     border-style: solid ;
-    transition-duration: 0.4s;
     cursor: pointer;
+    transition-duration: 0.4s;
 
 }
- 
+
+  
 .boton1:hover{
     background-color: #32babe; 
     color: white;
     font-size: 20px;
 }
 
+
+.botonCopiar {
+    transition-duration: 0.4s;
+}
+  
+.botonCopiar:hover {
+    background-color: #32babe;
+    color: white;
+    font-size: 20px;
+}
 
 .boton2{
 
@@ -218,9 +230,8 @@ textarea{
     border-style: solid ;
     transition-duration: 0.4s;
     cursor: pointer;
-
 }
-  
+
 .boton2:hover {
     background-color: #32babe;
     color: white;
@@ -247,25 +258,18 @@ textarea{
     border-color: black;
     border-width: 2px;
     border-style: solid ;
-    transition-duration: 0.4s;
     cursor: pointer;
-
 }
 
-.botonCopiar:hover {
-    background-color: #32babe;
-    color: white;
-    font-size: 20px;
-}
 
 footer{
-    position: relative;
+    position: absolute;
     background: #343A40;
     text-align: center;
     padding: 20px;
     bottom: 0;
-    width: 335%;
-    top: 94%;
+    width: 97%;
+    top: 93%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 255, 255);
 }
