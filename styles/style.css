@@ -5,6 +5,7 @@ body{
 }
 
 h1{
+
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     margin: 60px 0 0 400px;
@@ -284,12 +285,16 @@ footer p{
 
     header{
         position: absolute;
-        width: 375px;
-        height: 96px;
+        width: 503px;
+        height: 150px;
         left: 0px;
         top: 0px;
     }
 
+    h1{
+        font-size: 26px;
+        margin: 120px 8px 8px 40px;
+    }
 
     .resultado{
         display: flex;
@@ -332,7 +337,7 @@ footer p{
     }
 
     .mensaje{
-        width: 263px;
+        width: 250px;
         height: 58px;
 
         font-family: 'Inter';
@@ -358,7 +363,7 @@ footer p{
     }
 
     .mensaje2{
-        width: 263px;
+        width: 250px;
         height: 48px;
 
         font-family: 'Inter';
@@ -394,7 +399,7 @@ footer p{
         width: 229px;
         height: 18px;
         left: 16px;
-        top: 451px;
+        top: 445px;
     }
 
     .texto{
@@ -433,7 +438,7 @@ footer p{
         width: 343px;
         height: 158px;
         left: 24px;
-        top: 485px;
+        top: 484px;
     }
 
     .boton1{
@@ -534,7 +539,7 @@ footer p{
 
     .ingresoTexto{
         position: absolute;
-        width: 343px;
+        width: 385px;
         height: 42px;
         left: 16px;
         top: 152px;
