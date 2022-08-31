@@ -264,21 +264,65 @@ textarea{
 }
 
 footer{
-    position: absolute;
     background: #343A40;
     text-align: center;
     bottom: 0;
     width: 100%;
-    top: 92%;
+    top: 90%;
     left: 0px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
 }
 
 footer p{
     position:absolute;
     top: 38%;
     left: 37%;
+}
+
+@media (max-width: 1024px) {
+
+    .advertencia{
+        top: 620px;
+    }
+
+    textarea{
+        height: 900%;
+    }
+    
+    .resultado{
+        top: 100px;
+        height: 620px;   
+    }
+
+    .contenedorBotones{
+        top: 650px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .advertencia{
+        top: 770px;
+    }
+
+    textarea{
+        margin-top: 100px;
+        height: 480px;
+    }
+
+    .resultado{
+        top: 250px;
+        height: 620px;   
+    }
+
+    .contenedorBotones{
+        top: 800px;
+    }
+
 }
 
 @media screen and (max-width:480px){
@@ -296,21 +340,22 @@ footer p{
         margin: 120px 8px 8px 40px;
     }
 
+    textarea{
+        margin-top: 10px;
+        height: 200%;
+    }
+
     .resultado{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 66px;
         gap: 32px;
-
         position: absolute;
         width: 327px;
-        height: 186px;
+        height: 50px;
         left: 24px;
-        top: 656px;
-
-        /* White */
-
+        top: 520px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
@@ -322,18 +367,13 @@ footer p{
         align-items: flex-start;
         padding: 0px;
         gap: 0px;
-
         width: 263px;
         height: 122px;
-
-
-        /* Inside auto layout */
-
         flex: none;
         order: 0;
         align-self: stretch;
         flex-grow: 0;
-        top: 130px;
+        top: 40px;
     }
 
     .mensaje{
@@ -365,23 +405,13 @@ footer p{
     .mensaje2{
         width: 250px;
         height: 48px;
-
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
-        /* or 24px */
-
         text-align: center;
-
-        /* Gray/gray-400 */
-
         color: #495057;
-
-
-        /* Inside auto layout */
-
         flex: none;
         order: 1;
         align-self: stretch;
@@ -399,32 +429,22 @@ footer p{
         width: 229px;
         height: 18px;
         left: 16px;
-        top: 445px;
+        top: 270px;
     }
 
     .texto{
         width: 427px;
         height: 18px;
-
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
-        /* identical to box height, or 18px */
-
-
-        /* Gray/gray-400 */
-
         color: #495057;
-
-
-        /* Inside auto layout */
-
         flex: none;
         order: 1;
         flex-grow: 0;
-        margin: 0 0 0 10%;
+        margin: 0 0 5% 10%;
     }
 
     .contenedorBotones{
@@ -432,13 +452,12 @@ footer p{
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        gap: 19px;
-
+        gap: 5px;
         position: absolute;
         width: 343px;
         height: 158px;
         left: 24px;
-        top: 484px;
+        top: 300px;
     }
 
     .boton1{
@@ -536,7 +555,6 @@ footer p{
         font-size: 20px;
     }
 
-
     .ingresoTexto{
         position: absolute;
         width: 385px;
@@ -549,11 +567,6 @@ footer p{
         font-weight: 400;
         font-size: 32px;
         line-height: 150%;
-        /* identical to box height, or 48px */
-
-
-        /* Dark blue/dark-blue-300 */
-
         color: #0A3871;
     }
 
@@ -561,15 +574,58 @@ footer p{
         display: none;
     }
     
-    footer{
-        position: absolute;
-        background: #343A40;
-        text-align: center;
-        bottom: 0;
-        width: 100%;
-        top: 125%;
-        left: 0px;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgb(255, 255, 255);
+    footer p{
+        left: 20%;
     }
+}
+
+@media (max-width: 375px) {
+
+    textarea{
+        margin-top: 10px;
+        height: 310%;
+    }
+
+    .advertencia{
+        top: 310px;
+    }
+
+    .contenedorBotones{
+        top: 335px;
+    }
+
+    .resultado{
+        height: 100px;
+        top: 560px;
+    }
+    
+    .mensajeRemplazar{
+        top: 65px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    textarea{
+        margin-top: 10px;
+        height: 430%;
+    }
+
+    .advertencia{
+        top: 370px;
+    }
+
+    .contenedorBotones{
+        top: 400px;
+    }
+
+    .resultado{
+        height: 180px;
+        top: 620px;
+    }
+
+    .mensajeRemplazar{
+        top: 110px;
+    }
+
 }
