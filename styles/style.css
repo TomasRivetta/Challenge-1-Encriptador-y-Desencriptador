@@ -12,7 +12,6 @@ h1{
 
 }
 
-
 .logo{
 
     display: flex;
@@ -268,7 +267,7 @@ footer{
     text-align: center;
     bottom: 0;
     width: 100%;
-    top: 90%;
+    top: 88%;
     left: 0px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 255, 255);
@@ -277,12 +276,18 @@ footer{
 }
 
 footer p{
-    position:absolute;
+    padding: 10px;
     top: 38%;
     left: 37%;
 }
 
-@media (max-width: 1024px) {
+.logoGitHub,.logoLinkedin{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
 
     .advertencia{
         top: 620px;
@@ -294,16 +299,16 @@ footer p{
     
     .resultado{
         top: 100px;
-        height: 620px;   
+        height: 570px;   
     }
 
     .contenedorBotones{
-        top: 650px;
+        top: 600px;
     }
 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .advertencia{
         top: 770px;
@@ -385,16 +390,11 @@ footer p{
         font-weight: 700;
         font-size: 24px;
         line-height: 120%;
-        /* or 29px */
 
         text-align: center;
 
-        /* Gray/gray-500 */
 
         color: #343A40;
-
-
-        /* Inside auto layout */
 
         flex: none;
         order: 0;
@@ -470,12 +470,12 @@ footer p{
         width: 458px;
         height: 67px;
 
-        /* Dark blue/dark-blue-300 */
+        
 
         background: #0A3871;
         border-radius: 24px;
 
-        /* Inside auto layout */
+        
 
         flex: none;
         order: 0;
@@ -493,7 +493,7 @@ footer p{
     .boton2{
         box-sizing: border-box;
 
-        /* Auto layout */
+        
 
         
         flex-direction: row;
@@ -504,12 +504,12 @@ footer p{
         width: 458px;
         height: 67px;
 
-        /* Dark blue/dark-blue-300 */
+        
 
         border-style: solid;
         border-radius: 24px;
 
-        /* Inside auto layout */
+        
 
         flex: none;
         order: 1;
@@ -579,7 +579,7 @@ footer p{
     }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
 
     textarea{
         margin-top: 10px;
@@ -604,7 +604,7 @@ footer p{
     }
 }
 
-@media (max-width: 320px) {
+@media screen and(max-width: 320px) {
 
     textarea{
         margin-top: 10px;
