@@ -11,7 +11,7 @@ function encriptar(){
         {
             if(letrasNoPermitidas[i] == textoUsuario[j])
             {
-                alert("RECARGUE LA PAGINA, INGRESO LETRAS O NUMEROS INCORRECTAS")
+                swal("RECARGUE LA PAGINA, INGRESO LETRAS O NUMEROS INCORRECTAS","","error")
                 seguirEncriptando = false
                 break
             }
@@ -48,7 +48,7 @@ function encriptar(){
     }
     else
     {
-        alert("Recargue la pagina porfavor")
+        swal("Recargue la pagina porfavor","","error")
     }
 
     
@@ -64,7 +64,7 @@ function desencriptar(){
         {
             if(letrasNoPermitidas[i] == textoUsuario[j])
             {
-                alert("RECARGUE LA PAGINA, INGRESO LETRAS O NUMEROS INCORRECTAS")
+                swal("RECARGUE LA PAGINA, INGRESO LETRAS O NUMEROS INCORRECTAS","","error")
                 seguirEncriptando = false
                 break
             }
@@ -107,7 +107,7 @@ function desencriptar(){
     }
     else
     {
-        alert("Recargue la pagina porfavor")
+        swal("Recargue la pagina porfavor","","error")
     }
 
 }
@@ -115,7 +115,7 @@ function desencriptar(){
 
 function copiar(){
 
-    alert("MENSAJE COPIADO")
+    swal("MENSAJE COPIADO","","success")
     var aux = document.createElement("input");
     aux.setAttribute("value", document.querySelector(".mensajeRemplazar").innerHTML);
     document.body.appendChild(aux);
@@ -123,6 +123,6 @@ function copiar(){
     document.execCommand("copy");
     document.body.removeChild(aux);
 
-    document.getElementById("resultado").innerHTML = ""
+    document.getElementById("resultado").innerHTML = "Ingresa el texto que desees encriptar o desencriptar."
 
 }

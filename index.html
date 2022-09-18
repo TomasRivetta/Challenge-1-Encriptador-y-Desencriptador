@@ -10,67 +10,85 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <title>Challenge-1-Alura-ONE</title>
     </head>
 
     <body>
         <header>
+            <div class="cabecera">  
 
-            <div class="logo">
-        
-                <a target=_blank href="https://www.aluracursos.com/?gclid=Cj0KCQjw0oyYBhDGARIsAMZEuMtyoj2HLZtvTErFcFPzuWwcwFbe8VjM1YJ5IXR9oSPpNVrzfKPIT0UaAi8KEALw_wcB"><img src="image/Logo.png"></a>
+                <div class="contenedorImagen">
+                    <a id="logo" target=_blank href="https://www.aluracursos.com/?gclid=Cj0KCQjw0oyYBhDGARIsAMZEuMtyoj2HLZtvTErFcFPzuWwcwFbe8VjM1YJ5IXR9oSPpNVrzfKPIT0UaAi8KEALw_wcB"><img src="image/Vector.png"></a>
+                </div>
                 
-            </div>
-
-            <h1>Encriptador de texto Alura Challenge</h1>
-            
-        </header>
-
-        <main>
-
-            <div class="advertencia">
-
-                <p class="texto"> &#9888 Solo letras minusculas y sin acentos se encriptan y desencriptan</p>
- 
-            </div>
-
-            <div class="resultado">
-
-                <img class="imagen"src="image/Muñeco.png">
-     
-                <div id="resultado" class="mensajeRemplazar"> 
-        
-                    <p class="mensaje">Ningun Mensaje fue encontrado</p>
-                    <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
-                
+                <div class="contenedorTitulo">
+                    <h1 id="titulo">Encriptador de texto Alura Challenge</h1>
                 </div>
                 
             </div>
-    
-            <div class="ingresoTexto">
-    
-                <textarea id="textoInput" class="texto-ingresado" placeholder="Ingrese el texto" name="textarea" rows="20" cols="93"></textarea>
+
+        </header>
+        <main>
+            <div class="parteOne">
+                
+                <div class="areaIngresoTexto">
+                    
+                    <textarea id="textoInput" class="texto-ingresado" placeholder="Ingrese el texto" name="textarea" rows="15" cols="70"></textarea>
+            
+                </div>
+
+
+                <section class="parteTwo">
+                    <div class="contenedorImagen">
+                        <img class="imagen" src="image/Muñeco.png">
+                    </div>
+            
+                    <div id="resultado" class="mensajeRemplazar"> 
+                                
+                        <p class="mensaje">Ningun Mensaje fue encontrado</p>
+                        <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        
+                    </div>
+        
+                    <div class="botonCopiarNuevo">
+                        <button class="botonCopiar" onclick="copiar()">&#128203;Copiar</button>
+                    </div> 
+                </section>
                 
             </div>
-    
-            <div class="contenedorBotones">
+            <section>
+                
+                <div class="advertencia">
+                    
+                    <p class="texto"> &#9888 Solo letras minusculas y sin acentos se encriptan y desencriptan</p>
+                    
+                </div>
+                
+            </section>
+            
+            <section class="seccionBotones">
+                
+                <div class="contenedorBotones">
+                    
+                    <button class="boton1" onclick="encriptar()">&#128274;Encriptar</button>
+                    <button class="boton2" onclick="desencriptar()">&#128275;Desencriptar</button>
+                    
+                </div>
+                
+            </section>
+        </main>
+        <footer>
 
-                <button class="boton1" onclick="encriptar()">&#128274;Encriptar</button>
-                <button class="boton2" onclick="desencriptar()">&#128275;Desencriptar</button>
-                <button class="botonCopiar" onclick="copiar()">&#128203;Copiar</button>
-
+            <div class="textoFooter">
+                <p>Hecho por Tomas Rivetta. Challenge-1-Alura-ONE</p>
             </div>
 
-        </main>
-
-        <footer>
-            <div>
-                <p>Hecho por Tomas Rivetta. Challenge-1-Alura-ONE</p>
+            <div class="iconos">
                 <a href="https://github.com/TomasRivetta" target="_blanck"><img class="logoGitHub" src="image/github.png"></a>
                 <a href="https://www.linkedin.com/in/tomas-rivetta-1b324a246/" target="_blanck"><img class="logoLinkedin" src="image/linkedin.png"></a>
             </div>
         </footer>
-
         <script src="coding/coding.js"></script>
         
     </body>
