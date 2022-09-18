@@ -29,7 +29,6 @@ header{
 
 /*----------------------------------*/
 
-
 .areaIngresoTexto{
     padding: 5% 5% 2% 5%;
     display: flex;
@@ -39,8 +38,7 @@ header{
     border: 3px solid black;
     border-radius: 20px;
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    
+    font-size: 15px;
 }
 
 
@@ -50,15 +48,14 @@ header{
     font-family: 'Nunito', sans-serif;
     color: white;
     padding-left: 5%;
+    display: flex;
 }
 
 /*----------------------------------*/
 
-
-.seccionBotones{
+.contenedorBotones{
     display: flex;
-    flex-direction: column;
-    padding: 1% 14%;
+    margin-left: 8%;
 }
 
 
@@ -102,6 +99,9 @@ header{
 /*----------------------------------*/
 
 .parteTwo{
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
     margin-top: 5%;
     background-color: white;
     border-radius: 20px;
@@ -181,382 +181,28 @@ footer{
 
 @media screen and (max-width:500px){
     .contenedorBotones{
-        margin: 20% 0;
+        margin: 10% 25% 2%;
+        flex-direction: column;
+    }
+
+    .boton1,.boton2{
+        width: 100%;
     }
 }
 
 @media screen and (max-width:480px){
-    .contenedorBotones{
-        margin: 20% 0;
-    }
+
 }
 
 @media screen and (max-width:425px){
-    .contenedorBotones{
-        margin: 20% 0;
-    }
+
 }
 
-
-
 @media screen and (max-width: 375px){
-    .contenedorBotones{
-        margin: 20% 0;
-    }
+
 }
 
 @media screen and(max-width: 320px){
 
-    .contenedorBotones{
-        margin: 20% 0;
-    }
-
 }
 
-
-/*----------------------------------*/
-
-
-/*
-@media screen and (max-width: 1024px) {
-
-    .advertencia{
-        top: 620px;
-    }
-
-    textarea{
-        height: 900%;
-    }
-    
-    .resultado{
-        top: 100px;
-        height: 570px;   
-    }
-
-    .contenedorBotones{
-        top: 600px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    .advertencia{
-        top: 770px;
-    }
-
-    textarea{
-        margin-top: 100px;
-        height: 480px;
-    }
-
-    .resultado{
-        top: 250px;
-        height: 620px;   
-    }
-
-    .contenedorBotones{
-        top: 800px;
-    }
-
-}
-
-@media screen and (max-width:480px){
-
-    header{
-        position: absolute;
-        width: 503px;
-        height: 150px;
-        left: 0px;
-        top: 0px;
-    }
-
-    h1{
-        font-size: 26px;
-        margin: 120px 8px 8px 40px;
-    }
-
-    textarea{
-        margin-top: 10px;
-        height: 200%;
-    }
-
-    .resultado{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 66px;
-        gap: 32px;
-        position: absolute;
-        width: 327px;
-        height: 50px;
-        left: 24px;
-        top: 520px;
-        background: #FFFFFF;
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-        border-radius: 32px;
-    }
-
-    .mensajeRemplazar{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 0px;
-        width: 263px;
-        height: 122px;
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-        top: 40px;
-    }
-
-    .mensaje{
-        width: 250px;
-        height: 58px;
-
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 120%;
-
-        text-align: center;
-
-
-        color: #343A40;
-
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-    }
-
-    .mensaje2{
-        width: 250px;
-        height: 48px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: center;
-        color: #495057;
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
-    }
-
-    .advertencia{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        gap: 8px;
-
-        position: absolute;
-        width: 229px;
-        height: 18px;
-        left: 16px;
-        top: 270px;
-    }
-
-    .texto{
-        width: 427px;
-        height: 18px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: #495057;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        margin: 0 0 5% 10%;
-    }
-
-    .contenedorBotones{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 5px;
-        position: absolute;
-        width: 343px;
-        height: 158px;
-        left: 24px;
-        top: 300px;
-    }
-
-    .boton1{
-        
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 24px;
-        gap: 8px;
-
-        width: 458px;
-        height: 67px;
-
-        
-
-        background: #0A3871;
-        border-radius: 24px;
-
-        
-
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-    }
-
-    .boton1:hover{
-        transition-duration: 0.4s;
-        background-color: #32babe; 
-        color: white;
-        font-size: 20px;
-    }
-
-    .boton2{
-        box-sizing: border-box;
-
-        
-
-        
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 24px;
-        gap: 8px;
-
-        width: 458px;
-        height: 67px;
-
-        
-
-        border-style: solid;
-        border-radius: 24px;
-
-        
-
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
-    }
-
-    .boton2:hover {
-        transition-duration: 0.4s;
-        background-color: #32babe;
-        color: white;
-        font-size: 20px;
-    }
-    
-    .botonCopiar{
- 
-        box-sizing: border-box;
-        font-family: 'Nunito', sans-serif;
-        font-size: 15px;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 24px;
-        gap: 8px;
-        line-height: 5%;
-        width: 458px;
-        height: 70px;
-        background: #D8DFE8;
-        border: 2px solid #0A3871;
-        border-radius: 24px;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        border-color: black;
-        border-width: 2px;
-        border-style: solid ;
-        cursor: pointer;
-    }
-
-    .botonCopiar:hover {
-        transition-duration: 0.4s;
-        background-color: #32babe;
-        color: white;
-        font-size: 20px;
-    }
-
-    .ingresoTexto{
-        position: absolute;
-        width: 385px;
-        height: 42px;
-        left: 16px;
-        top: 152px;
-
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 150%;
-        color: #0A3871;
-    }
-
-    .imagen{
-        display: none;
-    }
-    
-    footer p{
-        left: 20%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-
-    textarea{
-        margin-top: 10px;
-        height: 310%;
-    }
-
-    .advertencia{
-        top: 310px;
-    }
-
-    .contenedorBotones{
-        top: 335px;
-    }
-
-    .resultado{
-        height: 100px;
-        top: 560px;
-    }
-    
-    .mensajeRemplazar{
-        top: 65px;
-    }
-}
-
-@media screen and(max-width: 320px) {
-
-    textarea{
-        margin-top: 10px;
-        height: 430%;
-    }
-
-    .advertencia{
-        top: 370px;
-    }
-
-    .contenedorBotones{
-        top: 400px;
-    }
-
-    .resultado{
-        height: 180px;
-        top: 620px;
-    }
-
-    .mensajeRemplazar{
-        top: 110px;
-    }
-
-}*/
