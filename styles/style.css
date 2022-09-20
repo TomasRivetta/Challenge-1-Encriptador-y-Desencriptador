@@ -31,9 +31,10 @@ header{
 
 main{
     display: flex;
+    margin-bottom: 2%;
 }
 
-.areaUNO{
+.parteOne{
     margin: 5% 5% 2% 5%;
 }
 
@@ -112,6 +113,7 @@ main{
     border-radius: 20px;
     border: 3px solid black;
     margin-left: 20vh;
+    width: 20%;
 }
 
 .imagen{
@@ -122,6 +124,7 @@ main{
 .mensajeRemplazar{
     text-align: center;
     margin-top: 20%;
+    margin-bottom: 5%;
 }
 
 .mensaje{
@@ -134,7 +137,7 @@ main{
 
 .botonCopiar{
 
-    margin-top: 20%;
+    margin: 10% 18%;
 
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
@@ -144,8 +147,8 @@ main{
 
     line-height: 5%;
 
-    width: 100%;
-    height: 82px;
+    width: 65%;
+    height: 50px;
 
     background: #D8DFE8;
     cursor: pointer;
@@ -178,10 +181,7 @@ footer{
 @media screen and (max-width: 1024px){
 }
 
-@media screen and (max-width: 768px){
-}
-
-@media screen and (max-width: 688px){
+@media screen and (max-width: 808px){
     main{
         flex-direction: column;
     }
@@ -191,8 +191,19 @@ footer{
     }
 
     .parteTwo{
+        width: 65%;
         margin: 5%;
         height: 10%;
+        
+    }
+}
+
+@media screen and (max-width: 768px){
+}
+
+@media screen and (max-width: 688px){
+    .parteTwo{
+        width: 70%;
     }
 }
 
@@ -211,14 +222,19 @@ footer{
     .boton1,.boton2{
         width: 100%;
     }
+
+    .parteTwo{
+        width: 90%;
+    }
+
 }
 
 @media screen and (max-width:480px){
 }
 
 @media screen and (max-width:425px){
-
 }
+
 
 @media screen and (max-width: 375px){
 
