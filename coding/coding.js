@@ -48,7 +48,7 @@ function encriptar(){
     }
     else
     {
-        swal("Recargue la pagina porfavor","","error")
+        swal("Recargue la pagina porfavor, INGRESO MAYUSCULAS O NUMEROS","","error")
     }
 
     
