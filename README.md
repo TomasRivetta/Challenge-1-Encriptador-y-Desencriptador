@@ -45,3 +45,4 @@ o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del m
 <hr>
 
 ### Insignia:
+![cms_files_10224_1659462746Badge_Sharer_Alura_ChallengeOracleONE_2000x2000_V3](https://user-images.githubusercontent.com/109299616/192115487-ed1acef5-6af5-439c-aab4-d6a3e4a210f7.png)
