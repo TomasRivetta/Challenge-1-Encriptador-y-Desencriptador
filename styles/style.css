@@ -190,20 +190,36 @@ footer{
         display: none;
     }
 
+    .parteOne{
+        margin-left: 20%;
+    }
     .parteTwo{
-        width: 65%;
-        margin: 5%;
+        width: 61%;
+        margin-left: 20%;
         height: 10%;
         
     }
 }
 
 @media screen and (max-width: 768px){
+    .parteOne{
+        margin-left: 20%;
+    }
+    .parteTwo{
+        width: 65%;
+        margin-left: 19%;
+    }
 }
 
 @media screen and (max-width: 688px){
+
+    .parteOne{
+        margin-left: 15%;
+    }
+
     .parteTwo{
         width: 70%;
+        margin-left: 15%;
     }
 }
 
@@ -223,8 +239,13 @@ footer{
         width: 100%;
     }
 
+    .parteOne{
+        margin-left: 5%;
+    }
+
     .parteTwo{
-        width: 90%;
+        width: 80%;
+        margin-left: 10%;
     }
 
 }
