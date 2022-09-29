@@ -187,10 +187,6 @@ footer{
         flex-direction: column;
     }
 
-    .contenedorImagen{
-        display: none;
-    }
-
     .parteOne{
         margin-left: 20%;
     }
@@ -199,6 +195,15 @@ footer{
         margin-left: 20%;
         height: 10%;
         
+    }
+
+    .contenedorImagenParteTwo{
+        display: none;
+    }
+
+    #logo{
+        width: 10%;
+        height: 10%;
     }
 }
 
