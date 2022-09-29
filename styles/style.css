@@ -264,7 +264,9 @@ footer{
 
 
 @media screen and (max-width: 375px){
-
+    #titulo{
+        margin-left: 8%;
+    }
 }
 
 @media screen and(max-width: 320px){
