@@ -123,6 +123,6 @@ function copiar(){
     document.execCommand("copy");
     document.body.removeChild(aux);
 
-    document.getElementById("resultado").innerHTML = "Ingresa el texto que desees encriptar o desencriptar."
+    document.getElementById("resultado").innerHTML = "Ningun Mensaje fue encontrado."
 
 }
