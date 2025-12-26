@@ -1,89 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/responsive.css">
-        <link rel="shortcut icon" href="image/Vector.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <title>Challenge-1-Alura-ONE</title>
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto - Alura Challenge</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="image/Vector.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
 
-    <body>
-        <header class="header">
-            <div class="cabecera">  
-
-                <div class="contenedorImagen">
-                    <a id="logo" target=_blank href="https://www.aluracursos.com/?gclid=Cj0KCQjw0oyYBhDGARIsAMZEuMtyoj2HLZtvTErFcFPzuWwcwFbe8VjM1YJ5IXR9oSPpNVrzfKPIT0UaAi8KEALw_wcB"><img src="image/Vector.png"></a>
-                </div>
-                
-                <div class="contenedorTitulo">
-                    <h1 id="titulo">Encriptador de texto Alura Challenge</h1>
-                </div>
-                
-            </div>
-
+<body>
+    <div class="main-container">
+        
+        <header>
+            <a href="https://www.aluracursos.com/" target="_blank" class="logo-container">
+                <img src="image/Vector.png" alt="Logo Alura" class="logo">
+            </a>
+            <h1>Encriptador de texto</h1>
         </header>
-        <main class="main">
-            <section class="parteOne">
 
-                <div class="prueba">
-
-                    <textarea id="textoInput" class="texto-ingresado" placeholder="Ingrese el texto" name="textarea" rows="15" cols="60" ></textarea>
-                        
-                </div>
-
-                <div class="advertencia">
+        <main>
+            <section class="input-section">
+                <textarea id="textoInput" class="text-area" placeholder="Ingrese el texto aquí"></textarea>
                 
-                    <p class="texto"> &#9888 Solo letras minusculas y sin acentos se encriptan y desencriptan</p>
-                            
-                </div>
+                <div class="bottom-controls">
+                    <div class="disclaimer">
+                        <span class="icon">&#9888;</span> 
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
                     
-                <div class="contenedorBotones">
-                            
-                    <button class="boton1" onclick="encriptar()">&#128274;Encriptar</button>
-                    <button class="boton2" onclick="desencriptar()">&#128275;Desencriptar</button>
-                            
+                    <div class="buttons-container">
+                        <button class="btn btn-primary" onclick="encriptar()">Encriptar</button>
+                        <button class="btn btn-secondary" onclick="desencriptar()">Desencriptar</button>
+                    </div>
                 </div>
-
             </section>
 
-            <section class="parteTwo">
-                <div class="contenedorImagenParteTwo">
-                    <img class="imagen" src="image/Muñeco.png">
+            <section class="output-section">
+                <div class="output-card" id="resultado">
+                    <div class="placeholder-content" id="placeholder">
+                        <img src="image/Muñeco.png" alt="Ningún mensaje" class="illustration">
+                        <h3 id="mensajePrueba">Ningún mensaje fue encontrado</h3>
+                        <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div id="output-content" style="display: none;">
+                        <p id="texto-resultado"></p>
+                        <button class="btn btn-outline" id="btn-copiar" onclick="copiar()">Copiar</button>
+                    </div>
                 </div>
-        
-                <div id="resultado" class="mensajeRemplazar"> 
-                            
-                    <p class="mensaje" id="mensajePrueba">Ningun Mensaje fue encontrado</p>
-                    <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
-    
-                </div>
-    
-                <div class="botonCopiarNuevo">
-                    <button class="botonCopiar" onclick="copiar()">&#128203;Copiar</button>
-                </div> 
             </section>
-
         </main>
-        <footer class="footer">
+    </div>
 
-            <div class="textoFooter">
-                <p>Hecho por Tomas Rivetta. Challenge-1-Alura-ONE</p>
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">Hecho por <strong>Tomas Rivetta</strong> - Challenge Alura ONE</p>
+            <div class="social-links">
+                <a href="https://github.com/TomasRivetta" target="_blank"><img src="image/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/tomas-rivetta-1b324a246/" target="_blank"><img src="image/linkedin.png" alt="LinkedIn"></a>
             </div>
-
-            <div class="iconos">
-                <a href="https://github.com/TomasRivetta" target="_blanck"><img class="logoGitHub" src="image/github.png"></a>
-                <a href="https://www.linkedin.com/in/tomas-rivetta-1b324a246/" target="_blanck"><img class="logoLinkedin" src="image/linkedin.png"></a>
-            </div>
-        </footer>
-        <script src="coding/coding.js"></script>
-        
-    </body>
+        </div>
+    </footer>
+    
+    <script src="coding/coding.js"></script>
+</body>
 </html>
